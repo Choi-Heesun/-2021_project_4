@@ -1,0 +1,1421 @@
+@charset "utf-8";
+
+
+
+#sub {
+    width: 1045px;
+    color:#333
+}
+
+/*subMap : 서브 네비게이션*/
+/*subMap : 서브 네비게이션*/
+#subnav {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.subMap_main {
+    width: 100%;
+    height: 100%;
+}
+
+.subMap_main > li {
+    float: left;
+    font-size: 12px;
+    margin-right: 5px;
+    padding: 3px 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.subMap_main > li > a > i{
+    margin-left: 10px;
+}
+
+.subMap_main > li:nth-child(2n-1):not(:first-child) {
+    border: 1px solid #ccc;
+}
+
+.subMap_sub {
+    border: 1px solid #333;
+    width: 130px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 27px;
+    background-color: #fff;
+    padding: 3px 0;
+}
+
+.subMap_sub > li {
+    width: 100%;
+    height: 20%;
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+.subMap_sub > li > a {
+    height: 100%;
+    text-decoration: none;
+    color: #666;
+}
+
+.subMap_sub > li:hover {
+    background-color: #eee;
+}
+
+.subMap_main > li:nth-child(5) .subMap_sub{
+    width: 390px;
+}
+
+.subMap_main > li:nth-child(5) .subMap_sub > li {
+    float: left;
+    width: 33.33%;
+    border-right: 1px solid #ddd;
+}
+
+.subMap_main > li:nth-child(7) > .subMap_sub, 
+.subMap_main > li:nth-child(9) > .subMap_sub {
+    width: 260px;
+}
+
+.subMap_main > li:nth-child(7) > .subMap_sub > li, 
+.subMap_main > li:nth-child(9) > .subMap_sub > li {
+    float: left;
+    width: 50%;
+    border-right: 1px solid #ddd;
+}
+
+.subMap_sub {
+    display: none;
+}
+
+/*bookInfo : 책정보 및 결제영역*/
+/*bookInfo : 책정보 및 결제영역*/
+#bookInfo_wrap {
+    margin-top: 25px;
+    width: 1045px;
+    height: 700px;
+}
+
+
+/*bookInfo_left: 북인포 왼쪽*/
+.bookInfo_left {
+    float: left;
+    width: 200px;
+    height: 100%;
+}
+
+.book_imgbox {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.book_imgbox > img {
+    width: 100%;
+    height: 100%;
+}
+
+.book_imgbox > span {
+    text-align: center;
+    width: 170px;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    line-height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+    display: none;
+}
+
+.bookInfo_left  > .book_imgbox:hover {
+    cursor: pointer;
+    border: 1px solid #999;
+}
+
+.bookInfo_left > .book_imgbox:hover span {
+    display: block;
+}
+
+.bookInfo_left > .bookimg_popup_btn {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.bookInfo_left > .bookimg_popup_btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.bookInfo_left > .shoparea_btn {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bookInfo_left > .shoparea_btn > b {   
+    font-size: 13px;
+    color: red;
+    line-height: 25px;
+}
+
+.bookInfo_left > .shoparea_btn > span {
+    margin-left: 10px;
+}
+
+.bookInfo_left > .shoparea_btn:hover {
+    cursor: pointer;
+    border: 1px solid #999;
+}
+
+.keyword_box {
+    margin-top: 15px;
+    width: 100%;
+    height: 170px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.keyword_box > h3 {
+    font-size: 14px;
+    margin: 15px 10px;
+}
+
+.keyword_box > h3 > span {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    float: right;
+    cursor: pointer;
+}
+
+.keyword_box > ul {
+    margin: 10px;
+}
+
+.keyword_box > ul > li {
+    font-size: 13px;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 5px 7px;
+    margin: 0 7px 7px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+.link_otherinfo {
+    margin-top: 15px;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.link_otherinfo > h3 {
+    width: 100%;
+    height: 50%;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    line-height: 27px;
+}
+
+.link_otherinfo > p {
+    width: 100%;
+    height: 50%;
+    font-size: 12px;
+    line-height: 28px;
+    padding: 0 10px;
+}
+
+.link_otherinfo > p > a {
+    text-decoration: none;
+}
+
+.link_otherinfo > p > a > i {
+    float: right;
+    color: #999;
+    line-height: 28px;
+}
+
+.link_otherinfo > p:hover {
+    background-color: #eee;
+}
+
+
+
+/*bookInfo_right*/
+/*bookInfo_right*/
+
+.bookInfo_right {
+    float: right;
+    width: 800px;
+    height: 100%;
+}
+
+.title_info {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.title_info > ul > li {
+    margin-bottom: 10px;
+}
+.title_info > ul > li > .tag {
+    padding: 2px 3px;
+    font-size: 11px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.title_info > ul > li > .tag:first-child {
+    background-color: #899bdb;
+    border: 1px solid #5f6b9f;
+    color: #fff;
+}
+
+.title_info > ul > li:nth-child(2) > h1{
+    font-size: 20px;
+    color: #3a60df;
+}
+
+.title_info > ul > li:nth-child(2) h1 > span {
+    color: #666;
+    font-size: 14px;
+}
+
+.title_info > ul > li:nth-child(3){
+    font-size: 13px;
+}
+.title_info > ul > li:nth-child(3) a {
+    display: inline-block;
+}
+
+.title_info > ul > li:nth-child(3) a:hover {
+    color:#3a60df;
+}
+
+.title_info > ul > li:nth-child(4) {
+    font-size: 12px;
+}
+
+.title_info > ul > li:nth-child(4) > i{
+    color: #1eb388;
+}
+
+.title_info > ul > li:nth-child(4) > p {
+    display: inline-block;
+}
+
+.title_info > ul > li:nth-child(4) > button {
+    padding: 2px 3px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    color:#3a60df;
+    cursor: pointer;
+}
+
+.title_info > ul > li:nth-child(4) > button:hover {
+    border: 1px solid #999;
+    transition: 0.5s;
+}
+
+.title_info > ul > li:nth-child(5) {
+    font-size: 12px;
+}
+
+.title_info > ul > li:nth-child(5) > a {
+    display: inline-block;
+    
+}
+
+.title_info > ul > li:nth-child(5) > a:hover {
+    color:#3a60df;
+}
+
+.price_info {
+    float: left;
+    width: 65%;
+    border-right: 1px solid #ddd;
+    padding:25px 0;
+    font-size: 13px;
+    line-height:28px;
+}
+
+.price_info > ul > li:nth-child(2) .red {
+    font-size: 25px;
+}
+
+.price_info > ul > li:nth-child(n+4):nth-child(-n+6) {
+    margin-left: 38px;
+}
+
+.price_info > ul > li > button , 
+.price_info > ul > li > a, 
+.post_info > ul > li > button{
+    padding: 2px 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+}
+
+.price_info > ul > li  >button:hover ,
+.price_info > ul > li > a:hover,
+.post_info > ul > li > button:hover{
+    border: 1px solid #999;
+    transition: 0.5s;
+}
+
+.event_info {
+    padding: 25px 0;
+    font-size: 12px;
+    line-height: 25px;
+    width: 30%;
+    float: right;
+}
+.event_info > ul > li > a {
+    display: inline;
+    text-decoration: none;
+}
+
+
+.event_info > ul > li:first-child > a > span.gray {
+    float: right;
+}
+
+.event_info > ul > li > a:hover, 
+.event_info > ul > li:first-child > a > span.gray:hover {
+    text-decoration: underline;
+    color:#3a60df;
+}
+
+.post_info {
+    width: 100%;
+    padding: 25px 0;
+    float: left;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.post_info > ul > li:nth-child(3) {
+    margin-left: 65px;
+}
+
+.order_info {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    font-size: 13px;
+}
+
+.order_info > p > input {
+    width: 45px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+
+.order_info > p > input::placeholder {
+    font-weight: bold;
+}
+
+.order_info > p > input::-webkit-outer-spin-button,
+.order_info > p > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+.order_info > p > button {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    color: slategray;
+}
+
+.order_info > p > button:hover {
+    color: #fff;
+    background-color: slategray;
+}
+
+.order_info > ul {
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_info > ul > li {
+    margin: 0;
+    width: 19%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+.order_info > ul > li > a {
+    color: #666;
+    text-decoration: none;
+}
+
+.order_info > ul > li:nth-child(1) {
+    background-color: #5e6b9f;
+}
+
+.order_info > ul > li:nth-child(2) {
+    background-color: #7b8ed1;
+}
+
+.order_info > ul > li:nth-child(-n+2) > a{
+    color: #fff
+}
+
+.order_info > ul > li:hover {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/*detailInfo*/
+/*detailInfo*/
+#detailInfo_wrap {
+    width: 100%;
+    height: 12000px;
+    margin-top: 50px;
+
+}
+
+/*detailInfo_left : 상세 페이지 왼쪽*/
+/*detailInfo_left : 상세 페이지 왼쪽*/
+.detailInfo_left {
+    width: 750px;
+    float: left;
+}
+
+.detail_info_nav { 
+    width: 100%;
+    height: 45px;
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.detail_info_nav:not(:first-of-type) {
+    margin-top: 35px
+}
+
+.detail_info_nav > li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    line-height: 43px;
+    font-size: 13px;
+    font-weight: bold;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.detail_info_nav > li > a {
+    text-decoration: none;
+}
+
+.detail_info_nav:nth-of-type(1) > li:not(:nth-child(1)):hover {
+    background-color: #f8f8f8;
+}
+
+.detail_info_nav:nth-of-type(2) > li:not(:nth-child(2)):hover {
+    background-color: #f8f8f8;
+}
+
+.detail_info_nav:nth-of-type(3) > li:not(:nth-child(3)):hover {
+    background-color: #f8f8f8;
+}
+
+.detail_info_nav:nth-of-type(4) > li:not(:nth-child(4)):hover {
+    background-color: #f8f8f8;
+}
+
+
+.detail_info_nav:nth-of-type(1) > li:first-child {
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.detail_info_nav:nth-of-type(2) > li:nth-child(2) {
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+}
+
+
+.detail_info_nav:nth-of-type(3) > li:nth-child(3) {
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.detail_info_nav:nth-of-type(4) > li:last-child {
+    border-right: 1px solid #ddd;
+    border-bottom: none;
+}
+
+/*detail_event _ 이 책의 이벤트*/
+.detail_event {
+    width: 100%;
+    height: 190px;
+    padding: 20px;
+}
+
+.detail_event > h4 > span {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.detail_event > a {
+    float: left;
+    margin: 20px 15px 0 0;
+} 
+
+.detail_event > p {
+    float: left;
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+/*detail_productInfo _ 상품정보*/
+.detail_productInfo {
+    width: 100%;
+    padding: 20px;
+}
+.detail_productInfo > a {
+    float: right;
+}
+
+.detail_productInfo > table {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 13px;
+    border-collapse: collapse;
+    border-top: 1px solid #ddd;
+}
+
+.detail_productInfo > table tr {
+    height: 30px;
+}
+
+.detail_productInfo > table tr td {
+    border-bottom: 1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+
+.detail_productInfo > table tr td:first-of-type {
+    text-align: center;
+    width: 140px;
+}
+
+.detail_productInfo > table tr td:last-of-type {
+    padding-left: 10px;
+    border-right:none  
+}
+
+/*책소개*/
+
+
+
+.detail_introbook > h4 {
+    margin: 30px 0 10px 0;
+}
+
+.detail_introbook > h5 {
+    width: 100%;
+    float: left;
+    margin:10px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.detail_introbook > h5:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+.detail_introbook > ul {
+    width: 100%;
+    height: 80px;
+}
+
+
+.detail_introbook > ul > li {
+    float: left;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.bookdetail_text {
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.detail_bookimg {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.detail_bookimg > h4{
+    float: left;
+    margin-bottom: 10px;
+}
+
+.detail_bookimg > img {
+    width: 100%;
+    display: block;
+}
+
+
+/*저자소개*/
+
+.author_intro {
+    margin-top: 45px;
+}
+.author_intro > p > b > a {
+    display: inline;
+}
+
+.author_intro > p > span {
+ float: right;
+}
+
+.author_intro > p > span > span {
+    margin-left: 5px;
+}
+
+
+
+
+.tableOfContents {
+    width: 100%;
+    margin-top: 45px;
+}
+
+/*rec : 추천사*/
+.rec {
+    margin-top: 45px;
+    width: 100%;
+}
+
+.rec > h5 {
+    margin-top: 30px;
+}
+
+.rec > p.bookdetail_text:nth-of-type(-n+10) {
+    margin-top: 10px;
+}
+
+.rec > h4:not(:first-of-type) {
+    margin-top: 45px;
+}
+
+/*Klover_review / 클로버리뷰*/
+.Klover_review_wrap {
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+.Klover_review_wrap > article:nth-of-type(1) {
+    width: 100%;
+    height: 215px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+.Klover_review_wrap > article:nth-of-type(1) > h5 {
+    padding: 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.Klover_review_wrap > article:nth-of-type(1) > section {
+    width: 50%;
+    height: 160px;
+    float: left;
+    border-right: 1px solid #ccc;
+    
+}
+.Klover_review_wrap > article > section:nth-of-type(1) > div {
+    width: 35%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.Klover_review_wrap > article > section:nth-of-type(1) > div > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.Klover_review_wrap > article > section:nth-of-type(1) > div > p > span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+.Klover_review_wrap > article > section:nth-of-type(1) > ul {
+    width: 65%;
+    height: 100%;
+    float: right;
+    font-size: 14px;
+    padding: 30px 15px;
+}
+
+.Klover_review_wrap > article > section:nth-of-type(1) > ul > li {
+    width: 100%;
+    height: 25%;
+    line-height: 30px;
+}
+.Klover_review_wrap > article > section:nth-of-type(2) {
+    border-right: none;
+}
+
+.Klover_review_wrap > article > section:nth-of-type(2) > ul {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+}
+
+.Klover_review_wrap > article > section:nth-of-type(2) > ul > li {
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    position: relative;
+}
+.Klover_review_wrap > article > section:nth-of-type(2) > ul > li > span.graph_bar {
+    width: 30px;
+    margin: 0 auto 20px auto;
+    border-radius: 30px;
+}
+
+.Klover_review_wrap > article > section:nth-of-type(2) > ul > li:nth-of-type(4) > span.graph_bar {
+    background-color: #dbdafd;
+    height: 60px;
+}
+
+.Klover_review_wrap > article > section:nth-of-type(2) > ul > li:nth-of-type(5) > span.graph_bar {
+    background-color: #bae6ff;
+    height: 40px;
+}
+
+
+.Klover_review_wrap > article > section:nth-of-type(2) > ul > li > img {
+    width: 37px;
+    height: 36px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Klover_review_wrap > article > section:nth-of-type(2) > ul > li > span.gray {
+    font-size: 11px;
+}
+
+span.graph_bar {
+    height: 10px;
+    background-color: #6edec6;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.klover_btn {
+    float: right;
+    border: none;
+    background-color: #1eb388;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Klover_review_box { 
+    margin-top: 25px;
+}
+
+.kover_nav {
+    width: 100%;
+    background-color: #fff;
+}
+
+.kover_nav > ul > li {
+    float: left;
+    width: 50px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+
+.kover_nav > ul:nth-of-type(2) {
+    float: right;
+}
+
+.Klover_review_box > ul {
+    border-top: 1px solid black;
+}
+
+.Klover_review_box > ul > li {
+    border-bottom: 1px solid #ddd;
+}
+
+.review_nav {
+    background-color: #fff;
+    font-size: 12px;
+    width: 100%;
+    line-height: 45px;
+}
+
+.review_nav > span.gray {
+    margin: 0 15px;
+}
+
+.review_nav > i {
+    margin-right: 2px;
+}
+
+.review_nav > .emotion {
+    padding:2px 3px;
+    border: 1px solid #899bdb;
+    font-size: 8px;
+    color:#899bdb;
+}
+
+.review_text {
+    padding: 15px 0;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #fff;
+}
+
+.Like {
+    width: 50px;
+    border: 1px solid #ddd;
+    float: right;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/*교환/반품/품절*/
+.product_guide {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.product_guide > p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.product_guide > table {
+    width: 100%;
+    font-size: 12px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    background-color: #fff;
+    line-height: 18px;
+}
+
+.product_guide > table tr th {
+    width: 150px;
+    text-align: left;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product_guide > table tr td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.product_guide > table tr td > ul > li {
+    margin-bottom: 5px;
+    list-style: inside;
+    
+}
+
+
+
+
+
+/*detailInfo_right : 상세 페이지 오른쪽*/
+/*detailInfo_right : 상세 페이지 오른쪽*/
+.detailInfo_right_fix {
+    width: 250px;
+    height: 1200px;
+    border: 1px solid #ddd;
+    float: right;
+}
+
+.detailInfo_right_fix > div {
+    width: 100%;
+    height: 50%;
+
+}
+
+.detailInfo_right_fix > div > h3 {
+    font-size: 14px;
+    margin: 15px 10px;
+}
+
+.detailInfo_right_fix > div > h3 > a {
+    float: right;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.detailInfo_right_fix > div > ul:first-of-type {
+    border-bottom: 1px solid #ddd;
+}
+
+.detailInfo_right_fix > div > ul > li {
+    width: 100%;
+    height: 90px;
+    margin: 15px 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    
+}
+
+.detailInfo_right_fix > div > ul > li > a {
+    width: 70px;
+    height: 100%;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+}
+
+.detailInfo_right_fix > div > ul > li > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.detailInfo_right_fix > div > ul > li > h5 {
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.detailInfo_right_fix > div > ul > li > p:nth-of-type(1){
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+
+
+
+
+/************************************************/
+/*bookinfo 도서창 누르면 뜨는 popup*/
+/*bookinfo 도서창 누르면 뜨는 popup*/
+
+.popup_bg {
+    width: 100%;
+    height: 100vmax;
+    position: fixed;
+    z-index: 999;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+.bookimg_popup {
+    width: 750px;
+    height: 750px;
+    background-color: #ddd;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.bookimg_popup > h3 {
+    width: 730px;
+    height: 40px;
+    font-size: 14px;
+    padding: 10px;
+    color: #333;
+}
+
+.bookimg_popup > h3 > .x_icon {
+    float: right;
+    font-size: 25px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+
+.bookimg_popup > article{
+    width: 730px;
+    height: 700px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.bookimg_popup > article > .book_imgbox {
+    width: 470px;
+    height: 680px;
+    margin: 10px;
+    float: left;
+}
+
+/* 팝업 오른쪽 sections */
+
+.popup_right {
+    width: 200px;
+    height: 680px;
+    margin: 10px;
+    float: right;
+    position: relative
+}
+
+.popup_right > .popupbook_title {
+    width: 100%;
+    height: 150px;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 22px;
+    color: #333;
+}
+
+.popup_right > .popupbook_title > ul {
+    margin-top: 20px;
+}
+
+.popup_right > .popupbook_opt {
+    width: 100%;
+    height: 120px;
+    border: 5px solid #eee;
+    margin-top: 10px;
+}
+.popup_right > .popupbook_opt > span{
+    float: left;
+    font-size: 12px;
+    margin: 28px 0 0 12px;
+}
+
+.popup_right > .popupbook_opt > input {
+    width: 50px;
+    float: left;
+    margin: 7px 0 0 12px;
+}
+
+.popup_right > .popupbook_opt > input:focus {
+    outline: none;
+}
+
+.popup_right > .popupbook_opt > ul {
+    float: right;
+    width: 120px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.popup_right > .popupbook_opt > ul > li {
+    border: 1px solid #ddd;
+    line-height: 25px;
+    margin: 7px;
+}
+
+.popup_right > .popupbook_opt > ul > li > a {
+    text-decoration: none;
+} 
+
+.popup_right > img {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.popup_bg, .bookimg_popup {
+    display: none;
+}
+
+/*shoparea_popup : 매장재고위치 popup*/
+/*keyword_popup : 키워드 popup*/
+/*Klover_popup : Klover popup*/
+.shoparea_popup, .keyword_popup, .Klover_popup {
+    background-color: #fff;
+    border: 2px solid #3661e3;
+    position: absolute;
+    display: none;
+}
+
+.shoparea_popup {
+    top: 665px;
+    width: 500px;
+}
+
+.keyword_popup {
+    width: 300px;
+    top:723px
+}
+
+.Klover_popup {
+    width: 200px;
+    top:415px
+}
+
+.shoparea_popup::before ,.keyword_popup::before, .Klover_popup::before {
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #3661e3;
+    top: -10px;
+}
+
+.shoparea_popup::after, .keyword_popup::after, .Klover_popup::after {
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    border: 14px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: #f2f6fa;
+    top: -7px;
+}
+
+.shoparea_popup::before {
+    left: 30px;
+}
+.shoparea_popup::after {
+    left: 26px;
+}
+
+.keyword_popup::before {
+    right: 115px;
+}
+
+.keyword_popup::after {
+    right: 111px;
+}
+
+.Klover_popup::before {
+    left: 30px;
+}
+.Klover_popup::after {
+    left: 26px;
+}
+
+.shoparea_popup > h3 , .keyword_popup > h3, .Klover_popup > h3{
+    font-size: 12px;
+    background-color: #f2f6fa;
+    padding: 5px 10px;
+    color: #333;
+}
+
+.shoparea_popup > h3 > span, .keyword_popup > h3 > span, .Klover_popup > h3 > span {
+    float: right;
+    font-size: 16px;
+    line-height: 15px;
+    cursor: pointer;
+    color: rgba(0,0,0,0.3);
+}
+
+.shoparea_popup > table {  
+    margin: 10px;
+    border-collapse: collapse;
+    width: 475px;
+    font-size: 12px;
+    text-align: center;
+    color:#666;
+} 
+
+.shoparea_popup > table > caption {
+    float: left;
+    font-weight: bold;
+    color: #3661e3;
+    margin-bottom: 5px;
+}
+
+.shoparea_popup > table tr {
+    width: 100%;
+    height: 30px;
+}
+
+.shoparea_popup > table tr:nth-child(odd){
+    background-color: #eee;
+}
+
+.shoparea_popup > table tr td {
+    width: 14.2%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+.shoparea_popup > ul {
+    margin: 10px;
+}
+.shoparea_popup > ul > li {
+    font-size: 12px;
+    line-height: 20px;
+
+}
+
+.keyword_popup > p {
+    margin: 10px;
+    font-size: 13px;
+    color: #666;
+    line-height: 22px;
+}
+
+
+.Klover_popup > ul > li > i{
+    font-size: 14px;
+}
+
+.Klover_popup > ul > li > i.full{
+    color: #1eb388;
+}
+
+.Klover_popup > ul > li > i.empty{
+    color: #ccc;
+}
+
+.Klover_popup > ul {
+    margin: 10px;
+}
+
+.Klover_popup > ul > li > div{
+    height: 10px;
+    display: inline-block;
+    background-color: #6edec6;
+    margin-left: 10px;
+}
+
+.Klover_popup > ul > li:nth-child(1) div {
+    width: 50px;
+}
+
+.Klover_popup > ul > li:nth-child(2) div {
+    width: 30px;
+}
+
+.Klover_popup > ul > li:nth-child(3) div {
+    width: 20px;
+}
+
+.Klover_popup > ul > li:nth-child(4) div {
+    width: 10px;
+}
+
+.Klover_popup > p > a {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #3a60df;
+    margin: 10px;
+}
+
+
+
+/* 설정 */
+.gray {color: #999; display: inline;}
+
+.red {color:red; display: inline;}
+
+.blue {color: #3a60df; display: inline;}
+
+.w_normal {font-weight: normal;}
+
+.link_btn {
+    padding: 3px 5px;
+    background-color: #fff;
+    display: inline;
+    border: 1px solid #ddd;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.link_btn:hover {
+    text-decoration: none;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.hashtag {
+    padding: 3px 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    cursor: pointer;
+}
+
+.hashtag:hover {
+    border: 1px solid #999;
+    transition: 0.3s;
+}
+
+.hashtag:hover a {
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 35px;
+}
+
+i.full{
+    color: #1eb388;
+}
+
+i.empty{
+    color: #ccc;
+}

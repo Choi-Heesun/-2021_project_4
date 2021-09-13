@@ -1,0 +1,42 @@
+[
+    {
+        "url":"klover_content_img/klover_book_2.jpg",
+        "part":"[과학]",
+        "title":"식물학자의 노트(양장본 HardCover)",
+        "author":"신혜우",
+        "klover":"klover_content_img/klover_icon.png",
+        "rank":"9.7"
+    },
+
+    {
+        "url":"klover_content_img/klover_book_3.jpg",
+        "part":"[유아(0~7세)]",
+        "title":"친구의 전설(웅진모두의그림책 42)(양장본 HardCover)",
+        "author":"이지은",
+        "klover":"klover_content_img/klover_icon.png",
+        "rank":"9.1"
+    },
+
+
+    {
+        "url":"klover_content_img/klover_book_4.jpg",
+        "part":"[인문]",
+        "title":"나도 아직 나를 모른다",
+        "author":"허지원",
+        "klover":"klover_content_img/klover_icon.png",
+        "rank":"9.5"
+    },
+
+
+    {
+        "url":"klover_content_img/klover_book_5.jpg",
+        "part":"[유아(0~7세)]",
+        "title":"도전! 진짜 과자 접기(대한민국 대표 과자)",
+        "author":"애플비북스 편집부",
+        "klover":"klover_content_img/klover_icon.png",
+        "rank":"9.5"
+    }
+
+
+
+]
